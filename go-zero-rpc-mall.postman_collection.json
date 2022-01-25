@@ -1,0 +1,531 @@
+{
+	"info": {
+		"_postman_id": "47df8d47-2ade-4373-bb2b-326ae208ee6d",
+		"name": "go-zero-rpc-mall",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/user/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"lum\",\n    \"gender\": 1,\n    \"mobile\":\"16602102151\",\n    \"password\":\"123456\"\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8000/api/user/register",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/user/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"lum\",\n    \"gender\": 1,\n    \"mobile\":\"16602102151\",\n    \"password\":\"123456\"\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8000/api/user/login",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDMxNzM3ODUsImlhdCI6MTY0MzA4NzM4NSwidWlkIjoxfQ.jh9JbnEHVjnulGvLVUlWNANVV3TUlCJZfgMWFSgxFX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"苹果\",\n    \"desc\": \"烟台苹果\",\n    \"stock\":10,\n    \"amount\":10,\n    \"status\":1\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8001/api/product/create",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"product",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDMxNzM3ODUsImlhdCI6MTY0MzA4NzM4NSwidWlkIjoxfQ.jh9JbnEHVjnulGvLVUlWNANVV3TUlCJZfgMWFSgxFX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"name\":\"苹果\",\n    \"desc\": \"烟台苹果\",\n    \"stock\":10,\n    \"amount\":20,\n    \"status\":1\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8001/api/product/update",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"product",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDMxNzM3ODUsImlhdCI6MTY0MzA4NzM4NSwidWlkIjoxfQ.jh9JbnEHVjnulGvLVUlWNANVV3TUlCJZfgMWFSgxFX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8001/api/product/detail",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"product",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/remove",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDMxNzM3ODUsImlhdCI6MTY0MzA4NzM4NSwidWlkIjoxfQ.jh9JbnEHVjnulGvLVUlWNANVV3TUlCJZfgMWFSgxFX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8001/api/product/detail",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"product",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/order/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDMxNzM3ODUsImlhdCI6MTY0MzA4NzM4NSwidWlkIjoxfQ.jh9JbnEHVjnulGvLVUlWNANVV3TUlCJZfgMWFSgxFX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uid\":1,\n    \"pid\":2,\n    \"amount\": 10,\n    \"status\": 1\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8002/api/order/create",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"order",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/order/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDMxNzM3ODUsImlhdCI6MTY0MzA4NzM4NSwidWlkIjoxfQ.jh9JbnEHVjnulGvLVUlWNANVV3TUlCJZfgMWFSgxFX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"amount\":5\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8002/api/order/update",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"order",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/order/detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDMxNzM3ODUsImlhdCI6MTY0MzA4NzM4NSwidWlkIjoxfQ.jh9JbnEHVjnulGvLVUlWNANVV3TUlCJZfgMWFSgxFX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"amount\":5\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8002/api/order/update",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"order",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/order/list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDMxNzM3ODUsImlhdCI6MTY0MzA4NzM4NSwidWlkIjoxfQ.jh9JbnEHVjnulGvLVUlWNANVV3TUlCJZfgMWFSgxFX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uid\":1\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8002/api/order/list",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"order",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/order/remove",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDMxNzM3ODUsImlhdCI6MTY0MzA4NzM4NSwidWlkIjoxfQ.jh9JbnEHVjnulGvLVUlWNANVV3TUlCJZfgMWFSgxFX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uid\":1\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8002/api/order/list",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"order",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/pay/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDMxNzM3ODUsImlhdCI6MTY0MzA4NzM4NSwidWlkIjoxfQ.jh9JbnEHVjnulGvLVUlWNANVV3TUlCJZfgMWFSgxFX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uid\":1\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8003/api/pay/create",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8003",
+					"path": [
+						"api",
+						"pay",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/pay/detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDMxNzM3ODUsImlhdCI6MTY0MzA4NzM4NSwidWlkIjoxfQ.jh9JbnEHVjnulGvLVUlWNANVV3TUlCJZfgMWFSgxFX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uid\":1\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8003/api/pay/detail",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8003",
+					"path": [
+						"api",
+						"pay",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/pay/callback",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDMxNzM3ODUsImlhdCI6MTY0MzA4NzM4NSwidWlkIjoxfQ.jh9JbnEHVjnulGvLVUlWNANVV3TUlCJZfgMWFSgxFX4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uid\":1\n}"
+				},
+				"url": {
+					"raw": "192.168.57.151:8003/api/pay/callback",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"151"
+					],
+					"port": "8003",
+					"path": [
+						"api",
+						"pay",
+						"callback"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
