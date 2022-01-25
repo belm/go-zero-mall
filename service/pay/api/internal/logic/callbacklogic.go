@@ -1,0 +1,44 @@
+package logic
+
+import (
+	"context"
+	"mall/service/pay/rpc/pay"
+
+	"mall/service/pay/api/internal/svc"
+	"mall/service/pay/api/internal/types"
+
+	"github.com/tal-tech/go-zero/core/logx"
+)
+
+type CallbackLogic struct {
+	logx.Logger
+	ctx    context.Context
+	svcCtx *svc.ServiceContext
+}
+
+func NewCallbackLogic(ctx context.Context, svcCtx *svc.ServiceContext) CallbackLogic {
+	return CallbackLogic{
+		Logger: logx.WithContext(ctx),
+		ctx:    ctx,
+		svcCtx: svcCtx,
+	}
+}
+
+func (l *CallbackLogic) Callback(req types.CallbackRequest) (resp *types.CallbackResponse, err error) {
+	// todo: add your logic here and delete this line
+
+	_, err = l.svcCtx.PayRpc.Callback(l.ctx, &pay.CallbackRequest{
+		Id: req.Id,
+		Oid: req.Oid,
+		Uid: req.Uid,
+		Amount: req.Amount,
+		Source: req.Source,
+		Status: req.Status,
+	})
+
+	if err != nil {
+		return nil,err
+	}
+
+	return &types.CallbackResponse{},nil
+}
