@@ -23,12 +23,18 @@ jobs:
         go version
         go mod tidy
         mkdir build
-        go build -i -o build/user-rpc ./service/user/rpc
-        go build -i -o build/user-api ./service/user/api
-        go build -i -o build/product-rpc ./service/product/rpc
-        go build -i -o build/product-api ./service/product/api
-        go build -i -o build/order-rpc ./service/order/rpc
-        go build -i -o build/order-api ./service/order/api
-        go build -i -o build/pay-rpc ./service/pay/rpc
-        go build -i -o build/pay-api ./service/pay/api
+        go build -o build/user-rpc ./service/user/rpc
+        go build -o build/user-api ./service/user/api
+        go build -o build/product-rpc ./service/product/rpc
+        go build -o build/product-api ./service/product/api
+        go build -o build/order-rpc ./service/order/rpc
+        go build -o build/order-api ./service/order/api
+        go build -o build/pay-rpc ./service/pay/rpc
+        go build -o build/pay-api ./service/pay/api
         ls build
+        
+    - name: Use the Upload Artifact GitHub Action
+      uses: actions/upload-artifact@v2.3.1
+      with: 
+          name: assets-for-download
+          path: build
