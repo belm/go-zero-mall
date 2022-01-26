@@ -25,8 +25,7 @@ jobs:
         
     - name: Run Unit tests
       run: |
-        PKG_LIST = $(shell go list ./... | grep -v /vendor/ | grep -v /docker/)
-        go test -short -coverprofile cover.out -covermode=atomic ${PKG_LIST}
+        go test -short -coverprofile cover.out -covermode=atomic $(shell go list ./... | grep -v /vendor/ | grep -v /docker/)
 	cat cover.out >> coverage.txt
 
     - name: Codecov
