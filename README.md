@@ -27,3 +27,8 @@ hset rpc.auth.pay payapi  xxx
 文件go-zero-mall-grafana.json是grafana模板，直接导入即可
 
 ![image](https://user-images.githubusercontent.com/551218/151104851-760e5c31-9a5a-47cc-857c-ecac58852c7b.png)
+
+## 感谢
+[go-zero](https://go-zero.dev/)
+
+[微服务实践公众号](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg2ODU1MTI0OA==&action=getalbum&album_id=2085775054620917763&scene=173&from_msgid=2247484980&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
