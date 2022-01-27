@@ -1,6 +1,6 @@
 # go-zero-mall
-
-[![codecov](https://codecov.io/gh/belm/go-zero-mall/branch/main/graph/badge.svg?token=W9ESYMTVI2)](https://codecov.io/gh/belm/go-zero-mall)
+[![codecov][cov-img]][cov]
+[![Build Status][ci-img]][ci]
 
 参考go-zero官方公众号测试编写
 
@@ -35,7 +35,14 @@ hset rpc.auth.pay payapi  xxx
 ![image](https://user-images.githubusercontent.com/551218/151284144-7e6a6711-e6f7-4c9e-a100-e9a2fbf8f692.png)
 
 
-## 感谢
+## 参考文献
 [go-zero](https://go-zero.dev/)
 
 [微服务实践公众号](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg2ODU1MTI0OA==&action=getalbum&album_id=2085775054620917763&scene=173&from_msgid=2247484980&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
+
+
+[ci-img]: https://github.com/belm/go-zero-mall/actions/workflows/go.yml/badge.svg
+[ci]: https://github.com/belm/go-zero-mall/actions/workflows/go.yml
+
+[cov-img]: https://codecov.io/gh/belm/go-zero-mall/branch/main/graph/badge.svg?token=W9ESYMTVI2
+[cov]: https://codecov.io/gh/belm/go-zero-mall
