@@ -21,7 +21,7 @@ jobs:
       run: |
         export PATH=$PATH:$(go env GOPATH)/bin
         go get -u golang.org/x/lint/golint 
-        go vet .
+        go vet $(go list ./... | grep -v /vendor/ | grep -v /docker/)
         golint -set_exit_status=1 .
         
     - name: Run Unit tests
