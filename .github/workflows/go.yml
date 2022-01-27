@@ -26,8 +26,8 @@ jobs:
         
     - name: Run Unit tests
       run: |
-        go test -v  -coverprofile=coverage.txt -covermode=atomic ./...
-# go test -short -coverprofile cover.out -covermode=atomic $(go list ./... | grep -v /vendor/ | grep -v /docker/)
+        go test -v  -coverprofile=coverage.txt -covermode=atomic $(go list ./... | grep -v /vendor/ | grep -v /docker/)
+# go test -v  -coverprofile=coverage.txt -covermode=atomic ./...
     - name: Codecov
       uses: codecov/codecov-action@v2.1.0
       with:
