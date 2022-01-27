@@ -46,8 +46,8 @@ jobs:
         go build -o build/pay-api ./service/pay/api
         ls build
         
-    - name: Use the Upload Artifact GitHub Action
-      uses: actions/upload-artifact@v2.3.1
-      with: 
-          name: assets-for-download
-          path: build
+    #- name: Use the Upload Artifact GitHub Action
+    #  uses: actions/upload-artifact@v2.3.1
+    #  with: 
+    #     name: assets-for-download
+    #     path: build
