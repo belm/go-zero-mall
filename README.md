@@ -28,6 +28,10 @@ hset rpc.auth.pay payapi  xxx
 
 ![image](https://user-images.githubusercontent.com/551218/151104851-760e5c31-9a5a-47cc-857c-ecac58852c7b.png)
 
+## Jaeger 链路追踪
+![image](https://user-images.githubusercontent.com/551218/151284144-7e6a6711-e6f7-4c9e-a100-e9a2fbf8f692.png)
+
+
 ## 感谢
 [go-zero](https://go-zero.dev/)
 
