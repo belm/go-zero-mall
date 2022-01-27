@@ -51,3 +51,6 @@ hset rpc.auth.pay payapi  xxx
 [release-img]: https://img.shields.io/github/v/release/belm/go-zero-mall.svg
 [release]: https://github.com/belm/go-zero-mall/releases
 
+[report-card-img]: https://goreportcard.com/badge/github.com/belm/go-zero-mall
+[report-card]: https://goreportcard.com/report/github.com/belm/go-zero-mall
+
