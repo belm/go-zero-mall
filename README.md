@@ -1,6 +1,9 @@
 # go-zero-mall
 
+[![codecov](https://codecov.io/gh/belm/go-zero-mall/branch/main/graph/badge.svg?token=W9ESYMTVI2)](https://codecov.io/gh/belm/go-zero-mall)
+
 参考go-zero官方公众号测试编写
+
 
 ## docker启动相关服务
 
