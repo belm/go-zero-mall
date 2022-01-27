@@ -1,6 +1,7 @@
 # go-zero-mall
-[![codecov][cov-img]][cov]
+[![GitHub release][release-img]][release] 
 [![Build Status][ci-img]][ci]
+[![codecov][cov-img]][cov]
 
 参考go-zero官方公众号测试编写
 
@@ -46,3 +47,7 @@ hset rpc.auth.pay payapi  xxx
 
 [cov-img]: https://codecov.io/gh/belm/go-zero-mall/branch/main/graph/badge.svg?token=W9ESYMTVI2
 [cov]: https://codecov.io/gh/belm/go-zero-mall
+
+[release-img]: https://img.shields.io/github/v/release/belm/go-zero-mall.svg
+[release]: https://github.com/belm/go-zero-mall/releases
+
